@@ -17,14 +17,14 @@ public class MyHashMap {
             return;
         }
 
-        int count = -1;
+        boolean keyAlreadyInList = false;
         for(Integer[] each : list) {
             if (each[0] == key) {
-                count++;
+                keyAlreadyInList = true;
                 each[1] = value;
             }
         }
-        if (count < 0) list.add(pair);
+        if (!keyAlreadyInList) list.add(pair);
     }
 
     public int get(int key) {
