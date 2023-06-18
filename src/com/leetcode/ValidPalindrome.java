@@ -8,7 +8,6 @@ import java.util.Locale;
 public class ValidPalindrome {
     public boolean isPalindrome(String s) {
         String result = s.replaceAll("[^0-9a-zA-Z]", "").toLowerCase();
-        if(result.length() <= 1) return false;
         char[] chars = result.toCharArray();
 
         StringBuilder sb = new StringBuilder();
