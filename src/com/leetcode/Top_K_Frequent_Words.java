@@ -3,12 +3,8 @@ package com.leetcode;
 import java.util.*;
 
 public class Top_K_Frequent_Words {
-    public static void main(String[] args) {
-        String[] words = new String[]{"bhsmote","sgmjynhhz","mrdcroqasn","mrdcroqasn","jmgch","amdmaic","mrdcroqasn","qyepsbmi","mrdcroqasn","sgmjynhhz","qyepsbmi","sgmjynhhz","sytzfmd","vtnhcbx","sytzfmd","czanzqtuwl","amdmaic","qyepsbmi","czanzqtuwl","qyepsbmi","sgmjynhhz","vtnhcbx","sgmjynhhz","tdtrobarr","vtnhcbx","sgmjynhhz","czanzqtuwl","amdmaic","mrdcroqasn","amdmaic","qyepsbmi","jmgch","qyepsbmi","sgmjynhhz","sgmjynhhz","sytzfmd","bdobr","sgmjynhhz","qyepsbmi","bdobr","czanzqtuwl","qyepsbmi","tdtrobarr","qyepsbmi","sytzfmd","tdtrobarr","mrdcroqasn"};
-        System.out.println(topKFrequent(words, 3));
-    }
 
-    public static List<String> topKFrequent(String[] words, int k) {
+    public List<String> topKFrequent(String[] words, int k) {
         Map<String, Integer> unicWords = new HashMap<>();
         for (int i = 0; i < words.length; i++) {
             if (!unicWords.containsKey(words[i])) {

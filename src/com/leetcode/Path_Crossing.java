@@ -5,11 +5,7 @@ import java.util.List;
 
 public class Path_Crossing {
 
-    public static void main(String[] args) {
-        System.out.println(isPathCrossing("NES"));
-    }
-
-    public static boolean isPathCrossing(String path) {
+    public boolean isPathCrossing(String path) {
         char[] directions = path.toCharArray();
         List<Coordinate> coordinates = new ArrayList<>();
         int currentX = 0;
@@ -45,7 +41,7 @@ public class Path_Crossing {
     }
 
     //class to hold coordinate of certain point
-    static class Coordinate {
+    public class Coordinate {
         int x = 0;
         int y = 0;
 
@@ -55,7 +51,7 @@ public class Path_Crossing {
         }
     }
 
-    public static boolean listContainsCoordinate(List<Coordinate> list, Coordinate coordinate) {
+    public boolean listContainsCoordinate(List<Coordinate> list, Coordinate coordinate) {
         for(Coordinate point : list) {
             if (point.x == coordinate.x && point.y == coordinate.y)
                 return true;
