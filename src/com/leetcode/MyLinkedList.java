@@ -31,8 +31,11 @@ public class MyLinkedList {
         if (root == null) {
             return -1;
         } else {
-            if (index == 0)
+            if (index == 0) {
                 return root.value;
+            } else if (index > getSize() - 1) {
+                return -1;
+            }
             int count = 0;
             Node current = root;
             while (count < index) {
@@ -84,8 +87,10 @@ public class MyLinkedList {
         } else {
             if (index == 0) {
                 addAtHead(val);
-            } else if (index > getSize() - 1) {
+            } else if (index > getSize()) {
                 return;
+            } else if (index == getSize()) {
+                addAtTail(val);
             } else {
                 int count = 1;
                 Node current = root;
@@ -118,12 +123,10 @@ public class MyLinkedList {
                     count++;
                     current = current.next;
                 }
-                Node toDelete = current;
                 Node previous = current.prev;
                 Node next = current.next;
                 previous.next = next;
                 next.prev = previous;
-                toDelete = null;
 
             }
         }
