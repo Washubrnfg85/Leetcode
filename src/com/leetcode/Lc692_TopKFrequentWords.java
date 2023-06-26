@@ -2,7 +2,7 @@ package com.leetcode;
 
 import java.util.*;
 
-public class Top_K_Frequent_Words {
+public class Lc692_TopKFrequentWords {
 
     public List<String> topKFrequent(String[] words, int k) {
         Map<String, Integer> unicWords = new HashMap<>();

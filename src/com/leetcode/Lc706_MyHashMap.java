@@ -3,10 +3,10 @@ package com.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyHashMap {
+public class Lc706_MyHashMap {
     List<Integer[]> list;
 
-    public MyHashMap() {
+    public Lc706_MyHashMap() {
         list = new ArrayList<>();
     }
 

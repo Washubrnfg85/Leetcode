@@ -1,6 +1,6 @@
 package com.leetcode;
 
-public class Merge_Two_Sorted_Lists {
+public class Lc21_MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
         if (list1 != null && list2 != null) {

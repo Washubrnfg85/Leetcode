@@ -2,7 +2,7 @@ package com.leetcode;
 
 import java.util.*;
 
-public class Intersection_of_Two_Arrays {
+public class Lc349_IntersectionOfTwoArrays {
     public int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);

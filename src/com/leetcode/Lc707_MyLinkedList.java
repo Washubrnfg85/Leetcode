@@ -1,8 +1,8 @@
 package com.leetcode;
 
 /**
- * Your MyLinkedList object will be instantiated and called as such:
- * MyLinkedList obj = new MyLinkedList();
+ * Your Lc707_MyLinkedList object will be instantiated and called as such:
+ * Lc707_MyLinkedList obj = new Lc707_MyLinkedList();
  * int param_1 = obj.get(index);
  * obj.addAtHead(val);
  * obj.addAtTail(val);
@@ -10,7 +10,7 @@ package com.leetcode;
  * obj.deleteAtIndex(index);
  */
 
-public class MyLinkedList {
+public class Lc707_MyLinkedList {
     private Node root;
 
     public class Node {
@@ -23,7 +23,7 @@ public class MyLinkedList {
         }
     }
 
-    public MyLinkedList() {
+    public Lc707_MyLinkedList() {
         this.root = null;
     }
 

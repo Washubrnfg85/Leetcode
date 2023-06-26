@@ -3,7 +3,7 @@ package com.leetcode;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Shuffle_String {
+public class Lc1528_ShuffleString {
     public String restoreString(String s, int[] indices) {
         char[] letters = s.toCharArray();
         Map<Integer, Character> map = new TreeMap<>();

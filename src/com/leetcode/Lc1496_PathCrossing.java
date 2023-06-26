@@ -3,7 +3,7 @@ package com.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Path_Crossing {
+public class Lc1496_PathCrossing {
 
     public boolean isPathCrossing(String path) {
         char[] directions = path.toCharArray();

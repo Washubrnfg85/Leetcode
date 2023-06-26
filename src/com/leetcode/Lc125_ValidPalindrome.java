@@ -1,11 +1,6 @@
 package com.leetcode;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
-
-public class ValidPalindrome {
+public class Lc125_ValidPalindrome {
     public boolean isPalindrome(String s) {
         String result = s.replaceAll("[^0-9a-zA-Z]", "").toLowerCase();
         char[] chars = result.toCharArray();
