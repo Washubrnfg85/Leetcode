@@ -8,29 +8,13 @@ public class Lc748_ShortestCompletingWord {
         String plateIgnoreNumbersAndSpaces = licensePlate.replaceAll("[\\d\" \"]", "").toLowerCase();
         String[] plateLetters = plateIgnoreNumbersAndSpaces.split("");
         Map<String, Integer> countPlateLetters = new HashMap<>();
-
-        for (String letter : plateLetters) {
-            if (countPlateLetters.containsKey(letter)) {
-                Integer value = countPlateLetters.get(letter);
-                countPlateLetters.put(letter, ++value);
-            } else {
-                countPlateLetters.put(letter, 1);
-            }
-        }
+        countLettersFrequency(countPlateLetters, plateLetters);
 
         List<String> completingWords = new ArrayList<>();
         for (String word : words) {
             String[] wordLetters = word.split("");
             Map<String, Integer> countWordLetters = new HashMap<>();
-            //filling the map
-            for (String letter : wordLetters) {
-                if (countWordLetters.containsKey(letter)) {
-                    Integer value = countWordLetters.get(letter);
-                    countWordLetters.put(letter, ++value);
-                } else {
-                    countWordLetters.put(letter, 1);
-                }
-            }
+            countLettersFrequency(countWordLetters, wordLetters);
 
             if (checkForAccordance(countPlateLetters, countWordLetters))
                 completingWords.add(word);
@@ -40,6 +24,17 @@ public class Lc748_ShortestCompletingWord {
             return completingWords.get(0);
         } else {
             return getTheShortestWordFromList(completingWords);
+        }
+    }
+
+    private void countLettersFrequency(Map<String, Integer> map, String[] array) {
+        for (String letter : array) {
+            if (map.containsKey(letter)) {
+                Integer value = map.get(letter);
+                map.put(letter, ++value);
+            } else {
+                map.put(letter, 1);
+            }
         }
     }
 
