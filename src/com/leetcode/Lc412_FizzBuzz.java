@@ -10,16 +10,15 @@ public class Lc412_FizzBuzz {
 
         for (int i = 1; i <= n; i++) {
 
-            int value = i;
             String str = "";
 
-            if (value % 3 == 0) {
+            if (i % 3 == 0) {
                 str += "Fizz";
             }
-            if (value % 5 == 0) {
+            if (i % 5 == 0) {
                 str += "Buzz";
             }
-            if (value % 7 == 0) {
+            if (i % 7 == 0) {
                 str += "Jazz";
             }
 
