@@ -1,11 +1,21 @@
 package com.leetcode;
 
-import java.util.*;
-import java.util.stream.Collectors;
-
 public class Lc704_BinarySearch {
     public int search(int[] nums, int target) {
-        List<Integer> list = Arrays.stream(nums).boxed().collect(Collectors.toList());
-        return list.indexOf(target);
+        int left = 0;
+        int right = nums.length - 1;
+        int middle = nums.length / 2;
+
+        while (left <= right) {
+            if(target == nums[middle]) {
+                return middle;
+            } else if (target < nums[middle]) {
+                right = middle - 1;
+            } else {
+                left = middle + 1;
+            }
+            middle = left + ((right - left) / 2);
+        }
+        return -1;
     }
 }
