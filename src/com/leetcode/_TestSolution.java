@@ -3,7 +3,10 @@ package com.leetcode;
 
 public class _TestSolution {
     public static void main(String[] args) {
-        Lc13_RomanToInteger instance = new Lc13_RomanToInteger();
-        System.out.println(instance.romanToInt("MCMXCIV "));
+        Lc14_LongestCommonPrefix instance = new Lc14_LongestCommonPrefix();
+
+        String[] strs = {"flower","flow","flight"};
+
+        System.out.println(instance.longestCommonPrefix(strs));
     }
 }

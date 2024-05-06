@@ -10,7 +10,7 @@ package com.leetcode;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Lc2_AddTwoNumbers {
+class _Lc2_AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return null;
     }
