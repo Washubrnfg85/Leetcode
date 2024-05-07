@@ -3,10 +3,10 @@ package com.leetcode;
 
 public class _TestSolution {
     public static void main(String[] args) {
-        Lc14_LongestCommonPrefix instance = new Lc14_LongestCommonPrefix();
+        Lc26_RemoveDuplicatesFromSortedArray instance = new Lc26_RemoveDuplicatesFromSortedArray();
 
-        String[] strs = {"flower","flow","flight"};
+        int[] nums = {1};
 
-        System.out.println(instance.longestCommonPrefix(strs));
+        System.out.println(instance.removeDuplicates(nums));
     }
 }
