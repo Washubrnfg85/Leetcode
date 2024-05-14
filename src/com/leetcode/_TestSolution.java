@@ -3,10 +3,11 @@ package com.leetcode;
 
 public class _TestSolution {
     public static void main(String[] args) {
-        Lc27_RemoveElement instance = new Lc27_RemoveElement();
+        Lc28_FindIndexOfFirstOccurrenceInString instance = new Lc28_FindIndexOfFirstOccurrenceInString();
 
-        int[] nums = {3,2,2,3};
+        String haystack = "sadbutsad";
+        String needle = "uts";
 
-        System.out.println(instance.removeElement(nums, 3));
+        System.out.println(instance.strStr(haystack, needle));
     }
 }
