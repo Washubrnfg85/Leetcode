@@ -3,10 +3,10 @@ package com.leetcode;
 
 public class _TestSolution {
     public static void main(String[] args) {
-        Lc26_RemoveDuplicatesFromSortedArray instance = new Lc26_RemoveDuplicatesFromSortedArray();
+        Lc27_RemoveElement instance = new Lc27_RemoveElement();
 
-        int[] nums = {1};
+        int[] nums = {3,2,2,3};
 
-        System.out.println(instance.removeDuplicates(nums));
+        System.out.println(instance.removeElement(nums, 3));
     }
 }
