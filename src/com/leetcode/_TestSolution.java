@@ -3,11 +3,11 @@ package com.leetcode;
 
 public class _TestSolution {
     public static void main(String[] args) {
-        Lc28_FindIndexOfFirstOccurrenceInString instance = new Lc28_FindIndexOfFirstOccurrenceInString();
+        Lc35_SearchInsertPosition instance = new Lc35_SearchInsertPosition();
 
-        String haystack = "sadbutsad";
-        String needle = "uts";
+        int[] nums = {1,3,5,6};
+        int target = 2;
 
-        System.out.println(instance.strStr(haystack, needle));
+        System.out.println(instance.searchInsert(nums, target));
     }
 }
