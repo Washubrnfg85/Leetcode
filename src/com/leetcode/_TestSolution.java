@@ -5,10 +5,10 @@ import com.sun.security.jgss.GSSUtil;
 
 public class _TestSolution {
     public static void main(String[] args) {
-        Lc58_LengthOfLastWord instance = new Lc58_LengthOfLastWord();
+        Lc3_LongestSubstringNoRepeat instance = new Lc3_LongestSubstringNoRepeat();
 
-        String s = "luffy is still joyboy";
+        String s = "pwwkew";
 
-        System.out.println(instance.lengthOfLastWord(s));
+        System.out.println(instance.lengthOfLongestSubstring(s));
     }
 }
